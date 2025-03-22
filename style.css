@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu {
+  background-color: #000;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & form {
+    width: 300px;
+  }
+
+  & li {
+    list-style: none;
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+
+    & a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 15px;
+  background-color: #696969;
+  outline: none;
+  transition: 0.3s;
+
+  &::placeholder {
+    color: #000; /* Cor do placeholder */
+    font-style: italic; /* Deixa o texto em itálico (opcional) */
+  }
+}
+.search-bar:focus {
+  border-color: #999; /* Muda a cor da borda ao focar */
+  background-color: #e0e0e0; /* Cinza mais escuro ao focar */
+  &::placeholder {
+    color: #888; /* Cor do placeholder */
+    font-style: italic; /* Deixa o texto em itálico (opcional) */
+  }
+}
