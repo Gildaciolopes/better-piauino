@@ -1,3 +1,14 @@
+:root {
+  --cor-primaria: #007bff; /* Azul forte (confiança) */
+  --cor-primaria-escura: #0056b3; /* Azul mais escuro para hover */
+
+  --cor-secundaria: #ff9800; /* Laranja para chamar atenção */
+  --cor-secundaria-escura: #e68900; /* Laranja escuro para hover */
+
+  --cor-fundo: #f4f4f4; /* Cinza claro para fundo */
+  --cor-texto: #333333; /* Cinza escuro para boa leitura */
+  --cor-branco: #ffffff; /* Branco para contrastes */
+}
 * {
   margin: 0;
   padding: 0;
@@ -67,16 +78,17 @@
   transition: 0.3s;
 
   &::placeholder {
-    color: #000; /* Cor do placeholder */
-    font-style: italic; /* Deixa o texto em itálico (opcional) */
+    color: #000;
+    font-style: italic;
   }
 }
 .search-bar:focus {
-  border-color: #999; /* Muda a cor da borda ao focar */
-  background-color: #e0e0e0; /* Cinza mais escuro ao focar */
+  border-color: #999;
+  background-color: #e0e0e0;
+  box-shadow: 0 0 5px rgb(255, 255, 255);
   &::placeholder {
-    color: #888; /* Cor do placeholder */
-    font-style: italic; /* Deixa o texto em itálico (opcional) */
+    color: #888;
+    font-style: italic;
   }
 }
 .introduction {
@@ -85,6 +97,6 @@
     font-size: 30px;
     font-family: "Poppins", sans-serif;
     padding: 30px;
-    color: #00008b;
+    color: var(--cor-texto);
   }
 }
