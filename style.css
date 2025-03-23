@@ -11,7 +11,8 @@
   align-items: center;
 
   & form {
-    width: 300px;
+    max-width: 100%;
+    width: 400px;
   }
 
   & li {
@@ -24,12 +25,26 @@
     & a {
       text-decoration: none;
       color: #fff;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+
+      & img {
+        filter: brightness(0) invert(1);
+        mix-blend-mode: difference;
+        width: 15px;
+        height: 15px;
+      }
     }
   }
 }
 .search-bar {
   display: flex;
   justify-content: space-between;
+  background-image: url("./img/search.png");
+  background-size: 18px;
+  background-position: right 5px center;
+  background-repeat: no-repeat;
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 5px;
